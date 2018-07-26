@@ -1,0 +1,65 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>周历</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/week-calendar.css" />
+	</head>
+
+	<body>
+		<div class="content">
+				<table class="tb-head">
+					<tr>
+						<td id="pre-week" onclick="pre()" class="left"><a>←</a></td>
+						<td class="center">
+							<a id="today" class="date">2018.4.9</a>
+						</td>
+						<td id="next-week" onclick="next()" class="right"><a>→</a></td>
+					</tr>
+				</table>
+
+				<div class="calendar-content">
+
+					<div>
+						<table class="tb-calendar-week">
+							<tr class="tb-calendar-week-head tb-calendar-week-row">
+							<th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th>
+							</tr>
+						</table>
+					</div>
+					
+					<div>
+						<table id = "tb-calendar-week-body" class="tb-calendar-week">
+							<tr class="tb-calendar-week-row">
+								<td class="tb-calendar-week-date"><a></a></td>
+								<td class="tb-calendar-week-date"><a></a></td>
+								<td class="tb-calendar-week-date"><a></a></td>
+								<td class="tb-calendar-week-date"><a></a></td>
+								<td class="tb-calendar-week-date"><a></a></td>
+								<td class="tb-calendar-week-date"><a></a></td>
+								<td class="tb-calendar-week-date"><a></a></td>
+							</tr>
+						</table>
+			    	</div>
+			  </div>
+		</div>
+		
+	</body>
+	
+	<script src="../js/jquery-2.1.0.js"></script>
+	<script src="../js/mui.min.js" ></script>
+	<script src="../js/week-calendar.js" ></script>
+	<script>
+		changeMyDateEvent = function(date){
+			console.log(date)
+		};
+		var day=new Date();
+  		setToday(day);
+  		setNowday(day);
+  		setDate(day);
+	</script>
+
+</html>
