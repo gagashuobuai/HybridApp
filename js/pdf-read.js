@@ -40,6 +40,8 @@
 				
 				mui.previewImage();//此处可以在所有img控件添加完毕后再进行执行
 		    });
+		}, function (error) {
+			mui.toast('解析错误');
 		});
 		return;
 	};
